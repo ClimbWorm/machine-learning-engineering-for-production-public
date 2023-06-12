@@ -14,7 +14,11 @@ app = FastAPI(title="Predicting Wine Class with batching")
 #    clf = pickle.load(file)
 
 #open the new classifier:
-with open("models/wine-95.pkl","rb") as file:
+#with open("models/wine-95.pkl","rb") as file:
+#    clf = pickle.load(file)
+
+#fixed classifier:
+with open("models/wine-95-fixed.pkl","rb") as file:
     clf = pickle.load(file)
 
 
